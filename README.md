@@ -1,4 +1,4 @@
-# Forked Marlin source, configured for BIGTREETECH SKR Mini E3 V2.0 
+# Forked Marlin source bugfix-2.0.x branch, configured for BIGTREETECH SKR Mini E3 V2.0 
 This is the latest Marlin firmware, applying specific configurations for BIGTREETECH SKR Mini E3 V2.0, my Ender 3 Pro, and my preferences
 
 ## Configuration
