@@ -1,3 +1,30 @@
+# Forked Marlin source, configured for BIGTREETECH SKR Mini E3 V2.0 
+This is the latest Marlin firmware, applying specific configurations for BIGTREETECH SKR Mini E3 V2.0, my Ender 3 Pro, and my preferences
+
+## Configuration
+I applied all changes i could identify in BIGTREETECH SKR Mini E3 V2.0 Git repo, along with some of my own preferences/opinions: 
+* Default PlatformIO environment is STM32F103RC_btt_512K
+* BLTouch is not enabled, I don't have one on my Ender 3
+* Neopixel LED driver is not enabled, I don't have these.
+* Mesh bed Leveling enabled, with some specific options
+* Manual probe enabled
+* LCD bed leveling enabled, with Mesh edit menu
+* Level bed corners enabled, with some specific options
+
+
+
+### Mesh bed leveling options
+I have a fairly warped bed (+-0.200), I set the Mesh leveling to 5x5 grid points (default is 3x3)
+
+### Level bed corner options
+I set the level corner heights to 0.3, so that I can raise my bed high enough to account for the -0.200 dips my bed has, and I can then set mesh level points to -0.200
+
+### Neopixel LED Driver
+I apply the BTT configurations incase I wanted to enabled them in the future. but it looks like it also requires some extra libraries to work. ¯\_(ツ)_/¯
+
+## Configuration Advanced
+I applied all changes i could identify in BIGTREETECH SKR Mini E3 V2.0 Git repo, I don't know if these are the best, I assumed BIGTREETECH did there homework, I also did not compare these settings to the Ender 3 Marlin configuration_adv.h
+
 # Marlin 3D Printer Firmware
 
 ![GitHub](https://img.shields.io/github/license/marlinfirmware/marlin.svg)
